@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Border样式类型的理解</title>
+    <link rel="stylesheet" href="style/border-style.css">
+</head>
+<body>
+<header>
+    <h1>CSS深入理解之Border（2）</h1>
+    <h2>了解各种border-style类型</h2>
+</header>
+<!--第一篇文章-->
+<article>
+    <h4>border-style中常用样式类型</h4>
+    <p>border-style样式中一般常用的样式包含solid（实线），dashed（虚线），其中dashed在不同浏览器上会呈现不同的样式，主要体现在：chrome、firefox浏览器一般采用一个线段的宽高比为3:1，而IE浏览器采用的宽高比为2:1，所以对于dashed，我们主要目的还是把他作为虚框展示而已，不要把其作为特殊样式进行设计。</p>
+    <h4>border-style中dotted样式</h4>
+    <p>dotted样式是一种用点来代替线段的一种样式，他在IE中显示的是圆形，而chrome等其他浏览器，使用的是正方形，所以也有兼容性的问题，不过，我们可以利用这种样式，做一些正方形或者圆形的图像样式。</p>
+    <p>下面我们利用这个border属性来做一个图形，而不需要使用加载图片的方式，这个制作的原理就是，我利用一个div1，然后嵌套一个div2，在div2中我们设置边框样式为dotted，并且设置他的大小恰好是父div的大小减去一个像素。</p>
+    <p>下面我们看效果：</p>
+    <div class="box1">
+        <div class="dotted">
+
+        </div>
+    </div>
+    <p style="margin-top: 60px;">那么我们下面继续优化，我只需要在最外层的DIV中，把超出div部分的内容隐藏不显示，就可以只保留最左上的图形了。效果如下：</p>
+    <div class="box1 ov-hidden">
+        <div class="dotted">
+
+        </div>
+    </div>
+    <p>这样，我们就显示了一个图像了。</p>
+</article>
+<!--第二篇文章-->
+<article>
+    <h4>border-style中double样式</h4>
+    <p>在边框大小属性中，我们了解到边框其实是由3根线组合合成的，由于间距的不同，会</p>
+    <div class="box2">
+
+    </div>
+</article>
+</body>
+</html>
