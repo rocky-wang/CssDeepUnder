@@ -13,8 +13,15 @@
 }
 
 .box2{
-    width: 85px;
+    width: 45px;
     height: 8px;
     border-top: 24px double #ddd;
     border-bottom: 8px solid #ddd;
+}
+
+.box3{
+    width: 8px;
+    height: 45px;
+    border-right: 24px double #ddd;
+    border-left: 8px solid #ddd;
 }
